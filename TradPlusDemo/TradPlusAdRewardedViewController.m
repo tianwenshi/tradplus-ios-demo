@@ -28,7 +28,7 @@
     self.rewardedVideoAd.delegate = self;
     //v7.8.0新增
     self.rewardedVideoAd.playAgainDelegate = self;
-    [self.rewardedVideoAd setAdUnitID:@"160AFCDF01DDA48CCE0DBDBE69C8C669"];
+    [self.rewardedVideoAd setAdUnitID:@"B5B81EBCC12E4376F6D5243CE99DB1E0"];
 }
 
 - (IBAction)loadAct:(id)sender

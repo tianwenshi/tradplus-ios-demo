@@ -27,7 +27,7 @@
     [super viewDidLoad];
     self.splashAd = [[TradPlusAdSplash alloc] init];
     self.splashAd.delegate = self;
-    [self.splashAd setAdUnitID:@"E5BC6369FC7D96FD47612B279BC5AAE0"];
+    [self.splashAd setAdUnitID:@"73E30E45FC005F813F701BF3C964F340"];
     //设置
 //    UIImage *image = [UIImage imageNamed:@"icon"];
 //    self.splashAd.dicCustomValue = @{@"pangleGlobal_appIcon":image};

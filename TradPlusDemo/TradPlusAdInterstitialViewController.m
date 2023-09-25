@@ -27,7 +27,7 @@
     [super viewDidLoad];
     self.interstitial = [[TradPlusAdInterstitial alloc] init];
     self.interstitial.delegate = self;
-    [self.interstitial setAdUnitID:@"063265866B93A4C6F93D1DDF7BF7329B"];
+    [self.interstitial setAdUnitID:@"5848F0DE48535B166FFE76F63926F8DE"];
 }
 
 - (IBAction)loadAct:(id)sender

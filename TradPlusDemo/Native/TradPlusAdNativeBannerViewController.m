@@ -34,7 +34,7 @@
     {
         isFirst = NO;
         self.nativeBanner = [[TradPlusNativeBanner alloc] init];
-        [self.nativeBanner setAdUnitID:@"155C125DB9289B5D17791AE0F8F1E92F"];
+        [self.nativeBanner setAdUnitID:@"79CF7B648388030807D9A73C81A917DC"];
         self.nativeBanner.frame = self.adView.bounds;
         self.nativeBanner.delegate = self;
         [self.adView addSubview:self.nativeBanner];

@@ -34,7 +34,7 @@
     {
         isFirst = NO;
         self.banner = [[TradPlusAdBanner alloc] init];
-        [self.banner setAdUnitID:@"6008C47DF1201CC875F2044E88FCD287"];
+        [self.banner setAdUnitID:@"6875940FC8512594FF877D9C0BCF8C95"];
         self.banner.frame = self.adView.bounds;
         self.banner.delegate = self;
         [self.adView addSubview:self.banner];
