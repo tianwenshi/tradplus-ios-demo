@@ -133,6 +133,7 @@
             }
             sleep(1);
         }
+        sleep(5);
     }
 }
 
@@ -161,10 +162,20 @@
         if (isReady == NO){
             XCTAssertTrue(isReady, @"banner ad not ready");
         }
-        XCUIElement *show = self.app.buttons[@"显示"];
-        [show tap];
         
-        sleep(10);
+        XCUIElement *adWebview = self.app.webViews[@"ad_webview"];
+        XCTAssertTrue(adWebview.exists, @"WKWebView does not exist");
+        XCTAssertTrue(adWebview.isHittable, @"WKWebView is not hittable");
+        !adWebview.exists?:[adWebview tap];
+        sleep(5);
+        XCUIApplication *safariApp = [[XCUIApplication alloc] initWithBundleIdentifier:@"com.apple.mobilesafari"];
+        NSPredicate *existsPredicate = [NSPredicate predicateWithFormat:@"self.state == %d", XCUIApplicationStateRunningForeground];
+        XCTestExpectation *appSwitched = [self expectationForPredicate:existsPredicate evaluatedWithObject:safariApp handler:nil];
+        [self waitForExpectations:@[appSwitched] timeout:2];
+        XCTAssertTrue(safariApp.state == XCUIApplicationStateRunningForeground, @"切换到 Safari 应用程序");
+        [self.app activate];
+        
+        sleep(5);
     }
 }
 
@@ -196,7 +207,19 @@
         XCUIElement *show = self.app.buttons[@"显示"];
         [show tap];
         
-        sleep(20);
+        XCUIElement *adWebview = self.app.webViews[@"ad_webview"];
+        XCTAssertTrue(adWebview.exists, @"WKWebView does not exist");
+        XCTAssertTrue(adWebview.isHittable, @"WKWebView is not hittable");
+        !adWebview.exists?:[adWebview tap];
+        sleep(5);
+        XCUIApplication *safariApp = [[XCUIApplication alloc] initWithBundleIdentifier:@"com.apple.mobilesafari"];
+        NSPredicate *existsPredicate = [NSPredicate predicateWithFormat:@"self.state == %d", XCUIApplicationStateRunningForeground];
+        XCTestExpectation *appSwitched = [self expectationForPredicate:existsPredicate evaluatedWithObject:safariApp handler:nil];
+        [self waitForExpectations:@[appSwitched] timeout:2];
+        XCTAssertTrue(safariApp.state == XCUIApplicationStateRunningForeground, @"切换到 Safari 应用程序");
+        [self.app activate];
+        
+        sleep(5);
     }
 }
 
@@ -227,6 +250,6 @@
     XCUIElement *show = self.app.buttons[@"显示"];
     [show tap];
     
-    sleep(10);
+    sleep(5);
 }
 @end
