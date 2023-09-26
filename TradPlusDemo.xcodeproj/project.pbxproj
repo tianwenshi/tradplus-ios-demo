@@ -16,6 +16,8 @@
 		04E47FD824971BE4006903C5 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E47FD724971BE4006903C5 /* libresolv.tbd */; };
 		04E47FDA24971BEA006903C5 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E47FD924971BEA006903C5 /* libxml2.tbd */; };
 		04E47FDC24971BEF006903C5 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E47FDB24971BEE006903C5 /* libz.tbd */; };
+		289FDB652AC1763A00CE1560 /* TradPlusDemoNUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 289FDB642AC1763A00CE1560 /* TradPlusDemoNUITests.m */; };
+		289FDB672AC1763A00CE1560 /* TradPlusDemoNUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 289FDB662AC1763A00CE1560 /* TradPlusDemoNUITestsLaunchTests.m */; };
 		5A1508D22795127300952903 /* TradPlusAdNativeDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1508D02795127300952903 /* TradPlusAdNativeDrawViewController.m */; };
 		5A1508D32795127300952903 /* TradPlusAdNativeDrawViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A1508D12795127300952903 /* TradPlusAdNativeDrawViewController.xib */; };
 		5A1508DE2795191E00952903 /* NativeGDTDrawView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A1508D52795191D00952903 /* NativeGDTDrawView.xib */; };
@@ -67,6 +69,16 @@
 		BAF08820C5745F19D64F9387 /* Pods_TradPlusDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA628CDDCE0A90002571385 /* Pods_TradPlusDemo.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		289FDB682AC1763A00CE1560 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 048B020D248BF2600003F53E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 048B0214248BF2600003F53E;
+			remoteInfo = TradPlusDemo;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		048B0215248BF2600003F53E /* TradPlusDemoN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TradPlusDemoN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		048B0229248BF2650003F53E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,6 +94,9 @@
 		04E47FD924971BEA006903C5 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		04E47FDB24971BEE006903C5 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		24FB5399EB3909262337C872 /* Pods-TradPlusDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradPlusDemo.release.xcconfig"; path = "Target Support Files/Pods-TradPlusDemo/Pods-TradPlusDemo.release.xcconfig"; sourceTree = "<group>"; };
+		289FDB622AC1763A00CE1560 /* TradPlusDemoNUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradPlusDemoNUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		289FDB642AC1763A00CE1560 /* TradPlusDemoNUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TradPlusDemoNUITests.m; sourceTree = "<group>"; };
+		289FDB662AC1763A00CE1560 /* TradPlusDemoNUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TradPlusDemoNUITestsLaunchTests.m; sourceTree = "<group>"; };
 		2AA628CDDCE0A90002571385 /* Pods_TradPlusDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TradPlusDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5784C44A51FB336370792105 /* Pods-TradPlusDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradPlusDemo.debug.xcconfig"; path = "Target Support Files/Pods-TradPlusDemo/Pods-TradPlusDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		5A1508CF2795127300952903 /* TradPlusAdNativeDrawViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TradPlusAdNativeDrawViewController.h; sourceTree = "<group>"; };
@@ -171,6 +186,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		289FDB5F2AC1763A00CE1560 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -191,6 +213,7 @@
 				048B0231248BF4530003F53E /* Assets.xcassets */,
 				048B022A248BF2650003F53E /* main.m */,
 				048B0235248BF4540003F53E /* Base.lproj */,
+				289FDB632AC1763A00CE1560 /* TradPlusDemoNUITests */,
 				048B0216248BF2600003F53E /* Products */,
 				048B025E248BF57A0003F53E /* Frameworks */,
 				0218058DED31D362A848F7C7 /* Pods */,
@@ -201,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				048B0215248BF2600003F53E /* TradPlusDemoN.app */,
+				289FDB622AC1763A00CE1560 /* TradPlusDemoNUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -290,6 +314,15 @@
 			path = Native;
 			sourceTree = "<group>";
 		};
+		289FDB632AC1763A00CE1560 /* TradPlusDemoNUITests */ = {
+			isa = PBXGroup;
+			children = (
+				289FDB642AC1763A00CE1560 /* TradPlusDemoNUITests.m */,
+				289FDB662AC1763A00CE1560 /* TradPlusDemoNUITestsLaunchTests.m */,
+			);
+			path = TradPlusDemoNUITests;
+			sourceTree = "<group>";
+		};
 		5A1508CE27950DEC00952903 /* NativeDraw */ = {
 			isa = PBXGroup;
 			children = (
@@ -371,6 +404,24 @@
 			productReference = 048B0215248BF2600003F53E /* TradPlusDemoN.app */;
 			productType = "com.apple.product-type.application";
 		};
+		289FDB612AC1763A00CE1560 /* TradPlusDemoNUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 289FDB6C2AC1763A00CE1560 /* Build configuration list for PBXNativeTarget "TradPlusDemoNUITests" */;
+			buildPhases = (
+				289FDB5E2AC1763A00CE1560 /* Sources */,
+				289FDB5F2AC1763A00CE1560 /* Frameworks */,
+				289FDB602AC1763A00CE1560 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				289FDB692AC1763A00CE1560 /* PBXTargetDependency */,
+			);
+			name = TradPlusDemoNUITests;
+			productName = TradPlusDemoNUITests;
+			productReference = 289FDB622AC1763A00CE1560 /* TradPlusDemoNUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -383,6 +434,10 @@
 					048B0214248BF2600003F53E = {
 						CreatedOnToolsVersion = 11.5;
 						LastSwiftMigration = 1310;
+					};
+					289FDB612AC1763A00CE1560 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 048B0214248BF2600003F53E;
 					};
 				};
 			};
@@ -400,6 +455,7 @@
 			projectRoot = "";
 			targets = (
 				048B0214248BF2600003F53E /* TradPlusDemo */,
+				289FDB612AC1763A00CE1560 /* TradPlusDemoNUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -434,6 +490,13 @@
 				5A1508D32795127300952903 /* TradPlusAdNativeDrawViewController.xib in Resources */,
 				5A95FCC528B74C3700FAF758 /* TradPlusAdNativeInListViewController.xib in Resources */,
 				5A19D466289CC78D0054CB52 /* TradPlusAdOfferwallViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		289FDB602AC1763A00CE1560 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,7 +581,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		289FDB5E2AC1763A00CE1560 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				289FDB652AC1763A00CE1560 /* TradPlusDemoNUITests.m in Sources */,
+				289FDB672AC1763A00CE1560 /* TradPlusDemoNUITestsLaunchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		289FDB692AC1763A00CE1560 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 048B0214248BF2600003F53E /* TradPlusDemo */;
+			targetProxy = 289FDB682AC1763A00CE1560 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		048B0236248BF4540003F53E /* LaunchScreen.storyboard */ = {
@@ -703,6 +783,46 @@
 			};
 			name = Release;
 		};
+		289FDB6A2AC1763A00CE1560 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 32Z4FX6L9H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ym.overlay.mv.TradPlusDemoNUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TradPlusDemo;
+			};
+			name = Debug;
+		};
+		289FDB6B2AC1763A00CE1560 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 32Z4FX6L9H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ym.overlay.mv.TradPlusDemoNUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TradPlusDemo;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -720,6 +840,15 @@
 			buildConfigurations = (
 				048B022F248BF2650003F53E /* Debug */,
 				048B0230248BF2650003F53E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		289FDB6C2AC1763A00CE1560 /* Build configuration list for PBXNativeTarget "TradPlusDemoNUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				289FDB6A2AC1763A00CE1560 /* Debug */,
+				289FDB6B2AC1763A00CE1560 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

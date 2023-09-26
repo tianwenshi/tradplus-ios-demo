@@ -27,7 +27,7 @@
     self.native = [[TradPlusAdNative alloc] init];
     self.native.delegate = self;
     [self.native setTemplateRenderSize:CGSizeMake([UIScreen mainScreen].bounds.size.width, 150)];
-    [self.native setAdUnitID:@"E8D198EBD7FDC4F8A725066C82D707E1"];
+    [self.native setAdUnitID:@"79CF7B648388030807D9A73C81A917DC"];
     
     self.itemArray = [[NSMutableArray alloc] init];
     for(NSInteger i = 0; i < 50 ; i++)

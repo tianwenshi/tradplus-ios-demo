@@ -35,7 +35,7 @@
     self.native = [[TradPlusAdNative alloc] init];
     self.native.finishDownload = YES;
     self.native.delegate = self;
-    [self.native setAdUnitID:@"1762D6F5BA9A25C2607B12E6E28D99BD"];
+    [self.native setAdUnitID:@"79CF7B648388030807D9A73C81A917DC"];
 }
 
 - (IBAction)loadAct:(id)sender

@@ -23,7 +23,7 @@
 {
     [super viewDidLoad];
     self.nativeSplash = [[TradPlusNativeSplash alloc] init];
-    [self.nativeSplash setAdUnitID:@"D419D9382F530398374BA67E48A940C2"];
+    [self.nativeSplash setAdUnitID:@"79CF7B648388030807D9A73C81A917DC"];
     self.nativeSplash.delegate = self;
 }
 

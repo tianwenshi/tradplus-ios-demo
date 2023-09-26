@@ -8,6 +8,7 @@
 
 #import "TradPlusAdRewardedViewController.h"
 #import <TradPlusAds/TradPlusAdRewarded.h>
+@import MaticooSDK;
 
 @interface TradPlusAdRewardedViewController ()<TradPlusADRewardedDelegate,TradPlusADRewardedPlayAgainDelegate>
 {
@@ -17,6 +18,8 @@
 @property (nonatomic, strong) TradPlusAdRewarded *rewardedVideoAd;
 @property (nonatomic,weak)IBOutlet UILabel *logLabel;
 @property (nonatomic,weak)IBOutlet UIView *adView;
+@property (nonatomic, strong) NSString *placementID;
+@property (nonatomic, strong) MATRewardedVideoAd* rewardedVideo;
 @end
 
 @implementation TradPlusAdRewardedViewController
@@ -47,13 +50,13 @@
     [self.rewardedVideoAd showAdWithSceneId:nil];
 }
 
-
 #pragma mark - TradPlusADRewardedDelegate
 
 ///AD加载完成
 - (void)tpRewardedAdLoaded:(NSDictionary *)adInfo
 {
     NSLog(@"%s \n%@", __FUNCTION__ ,adInfo);
+    self.placementID = adInfo[@"placementid"];
     self.logLabel.text = @"加载成功";
 }
 ///AD加载失败
@@ -135,8 +138,22 @@
 - (void)tpRewardedAdPlayEnd:(NSDictionary *)adInfo
 {
     NSLog(@"%s \n%@", __FUNCTION__ ,adInfo);
+    //For XCTest
+    self.rewardedVideo = [[MATRewardedVideoAd alloc] initWithPlacementID:self.placementID];;
+    UIButton *closeBtn = [[UIButton alloc] initWithFrame:CGRectMake(10, 20, 2, 2)];
+    closeBtn.backgroundColor = [UIColor blackColor];
+    closeBtn.accessibilityIdentifier = @"ad_closeBtn";
+    [closeBtn setTitle:@"x" forState:UIControlStateNormal];
+    [closeBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [closeBtn setTitleColor:[UIColor blackColor] forState:UIControlStateHighlighted];
+    [closeBtn addTarget:self action:@selector(closeButtonTouchDown:) forControlEvents:UIControlEventTouchDown];
+    [self.rewardedVideo.modalViewController.view addSubview: closeBtn];
 }
 
+//For XCTest
+- (void)closeButtonTouchDown:(UIButton*)btn {
+    [self.rewardedVideo.modalViewController dismissViewControllerAnimated:YES completion:nil];
+}
 
 #pragma mark - TradPlusADRewardedPlayAgainDelegate
 

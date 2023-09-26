@@ -24,7 +24,7 @@
 {
     [super viewDidLoad];
     self.nativeAd = [[TradPlusAdNative alloc] init];
-    [self.nativeAd setAdUnitID:@"0C7A52DD779529F567E62EA5D5B60A0D"];
+    [self.nativeAd setAdUnitID:@"79CF7B648388030807D9A73C81A917DC"];
     self.nativeAd.delegate = self;
 }
 
